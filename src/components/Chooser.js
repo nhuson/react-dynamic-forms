@@ -13,6 +13,9 @@ import _ from "underscore";
 import PropTypes from "prop-types";
 
 import formGroup from "../js/formGroup";
+import '../../dist/react-select.css'
+import '../../dist/styles.css'
+import '../../dist/react-virtualized/styles.css'
 
 // import 'react-select/dist/react-select.css'
 // import 'react-virtualized/styles.css'
