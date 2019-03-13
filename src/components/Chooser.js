@@ -13,13 +13,10 @@ import _ from "underscore";
 import PropTypes from "prop-types";
 
 import formGroup from "../js/formGroup";
-import '../../dist/react-select.css'
-import '../../dist/styles.css'
-import '../../dist/react-virtualized/styles.css'
 
-// import 'react-select/dist/react-select.css'
-// import 'react-virtualized/styles.css'
-// import 'react-virtualized-select/styles.css'
+import 'react-select/dist/react-select.css'
+import 'react-virtualized/styles.css'
+import 'react-virtualized-select/styles.css'
 
 import VirtualizedSelect from "react-virtualized-select";
 
@@ -136,14 +133,14 @@ class Chooser extends React.Component {
 
     getCurrentChoice() {
         const choiceItem = this.props.choiceList.find(item => {
-            return item.get("id") === this.props.value;
+            return item.get("id") == this.props.value;
         });
         return choiceItem ? choiceItem.get("id") : undefined;
     }
 
     getCurrentChoiceLabel() {
         const choiceItem = this.props.choiceList.find(item => {
-            return item.get("id") === this.props.value;
+            return item.get("id") == this.props.value;
         });
         return choiceItem ? choiceItem.get("label") : "";
     }
