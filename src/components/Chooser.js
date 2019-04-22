@@ -17,6 +17,7 @@ import formGroup from "../js/formGroup";
 import 'react-select/dist/react-select.css'
 import 'react-virtualized/styles.css'
 import 'react-virtualized-select/styles.css'
+import '../css/boostrap.css'
 
 import VirtualizedSelect from "react-virtualized-select";
 
