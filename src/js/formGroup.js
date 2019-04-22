@@ -62,7 +62,6 @@ export default function formGroup(Widget, hideEdit) {
 
     render() {
       const { hidden = false, width, allowEdit, ...props } = this.props;
-      console.log(this.props.ingredients, "====from gorm group");
       const {
         name,
         label,
