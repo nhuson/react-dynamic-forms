@@ -62,6 +62,7 @@ export default function formGroup(Widget, hideEdit) {
 
     render() {
       const { hidden = false, width, allowEdit, ...props } = this.props;
+      console.log(this.props.ingredients, "====from gorm group");
       const {
         name,
         label,
@@ -70,8 +71,7 @@ export default function formGroup(Widget, hideEdit) {
         disabled,
         required,
         showRequired,
-        onSelectItem,
-        ingredients
+        onSelectItem
       } = props;
 
       const selectStyle = {};
@@ -94,7 +94,7 @@ export default function formGroup(Widget, hideEdit) {
             width: widgetWidth
           }}
         >
-          <Widget {...props} />
+          <Widget {...props} ingredients={this.props.ingredients} />
         </div>
       );
 

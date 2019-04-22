@@ -167,8 +167,7 @@ export default function list(ItemComponent, hideEditRemove) {
             this.handleMissingCountChange(name, missingCount),
           onChange: (name, value) => {
             this.handleChangeItem(name, value);
-          },
-          ingredients: this.props.ingredients
+          }
         };
         itemComponents.push(
           <ItemComponent
@@ -176,6 +175,7 @@ export default function list(ItemComponent, hideEditRemove) {
             value={item}
             editable={this.props.edit}
             edit={this.state.selected === index && this.props.edit}
+            ingredients={this.props.ingredients}
           />
         );
       });
