@@ -92,3 +92,6 @@ class EmailForm extends React.Component {
 
 const EmailList = formList(EmailForm);
 const Ingredients = formGroup(EmailList);
+
+# To install
+`npm i @nhuson/react-dynamic-forms`
